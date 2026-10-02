@@ -1,46 +1,45 @@
 # Retail Sales & Customer Analytics using MySQL
 
-## 📌 Project Overview
+<p align="center">
+  <img src="https://img.shields.io/badge/MySQL-8.0.45-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+  <img src="https://img.shields.io/badge/SQL-Analytics-025E8C?style=for-the-badge" alt="SQL">
+  <img src="https://img.shields.io/badge/MySQL%20Workbench-Database%20Tool-00758F?style=for-the-badge" alt="MySQL Workbench">
+  <img src="https://img.shields.io/badge/Project-Medium%20Level-6C63FF?style=for-the-badge" alt="Project Level">
+</p>
 
-This project is a medium-level SQL analytics project built using MySQL.
+## 📌 Overview
 
-The project analyzes retail sales data to understand sales performance, customer behavior, product performance, category performance, store performance, and revenue trends.
+**Retail Sales & Customer Analytics** is a relational database and SQL analytics project developed using **MySQL**.
 
-The database is designed using a relational structure with customers, products, categories, stores, orders, and order items.
+The project simulates a retail business environment where customers purchase products through different stores and payment methods. The transactional data is organized into multiple related tables and analyzed using SQL to generate meaningful business insights.
 
----
-
-## 🎯 Objectives
-
-- Analyze overall sales performance
-- Calculate total revenue and average order value
-- Identify top-performing products
-- Analyze product-level profit
-- Compare category-wise revenue
-- Analyze customer spending behavior
-- Identify high-value customers
-- Analyze store performance
-- Analyze payment methods
-- Track monthly revenue
-- Calculate month-over-month revenue growth
+The main focus of this project is to demonstrate how SQL can be used to move from **raw transactional data → structured analysis → business insights**.
 
 ---
 
-## 🗄️ Database Schema
+## 🎯 Business Objective
 
-The project contains six main tables:
+The objective is to analyze retail transactions and answer important business questions related to:
+
+- Sales performance
+- Revenue generation
+- Product performance
+- Product profitability
+- Category performance
+- Customer purchasing behavior
+- Customer value
+- Store performance
+- Payment methods
+- Monthly sales trends
+- Revenue growth
+
+The project also demonstrates practical SQL techniques used in real-world data analysis.
+
+---
+
+# 🗄️ Database Design
+
+The database is named:
 
 ```text
-customers
-    │
-    └── orders
-          │
-          └── order_items
-                 │
-                 └── products
-                        │
-                        └── categories
-
-stores
-    │
-    └── orders
+retail_analytics
